@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0" />
+    <title>Reponsive Tickets</title>
+    <style>
+      .ticket-container {
+        height: 250px;
+        width: 800px;
+        display: flex;
+        margin: 25px auto;
+        position: relative;
+      }
+      .user-part {
+        width: 64.5%;
+        position: absolute;
+        margin-left: 35%;
+        border: solid 2px;
+        border-left: dashed;
+        height: 99%;
+      }
+      .event-part {
+        margin: 0;
+        position: absolute;
+        border: solid 2px;
+        border-right: none;
+        width: 35%;
+        height: 99%;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+      }
+      .heading {
+        margin-top: 20px;
+        margin-left: 75px;
+        font-size: 40px;
+      }
+      .logo {
+        height: 100px;
+        width: 150px;
+      }
+      .image-info {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        font-size: 25px;
+      }
+      .info {
+        font-size: 27px;
+        margin-left: 40px;
+        margin-top: 30px;
+      }
+      .ticket {
+        font-size: 50px;
+        margin-top: 20px;
+        margin-left: 25px;
+        margin-bottom: 0px;
+      }
+      .logo-2 {
+        margin-bottom: 20px;
+      }
+
+      /* Mobile Devices */
+
+      @media (max-width: 600px) {
+        .ticket-container {
+          flex-direction: column;
+        }
+        .event-part {
+          height: 530px;
+        }
+        .user-part {
+          height: 530px;
+        }
+      }
+
+      /* Tablet Devices */
+
+      @media screen and (min-width: 601px) and (max-width: 800px) {
+        .ticket-container {
+          flex-direction: column;
+        }
+        .event-part {
+          height: 530px;
+        }
+        .user-part {
+          height: 530px;
+        }
+        .heading {
+          margin-top: 20px;
+          margin-left: 75px;
+          font-size: 60px;
+        }
+        .image-info {
+          display: flex;
+          align-items: center;
+          justify-content: space-around;
+          font-size: 30px;
+        }
+      }
+
+      /* Dekstop device */
+
+      @media screen and (min-width: 801px) and (max-width: 1024px) {
+      }
+    </style>
+  </head>
+  <body>
+    <div class="ticket-container">
+      <img src="./img1.jpg" width="800px" />
+      <div class="user-part">
+        <div class="image-info">
+          <img src="./new.png" class="logo" /><b>WELCOME FRESHERS</b>
+        </div>
+        <h1 class="heading"><b>FRESTOPIA FEISTA</b></h1>
+        <div class="info">
+          <span
+            ><b
+              >DATE: 01/01/01 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp;TIME:00:00</b
+            ></span
+          >
+        </div>
+      </div>
+
+      <div class="event-part">
+        <h1 class="ticket"><b>PARTY TICKET</b></h1>
+        <img src="./new1.png" class="logo-2" />
+      </div>
+    </div>
+  </body>
+</html>
